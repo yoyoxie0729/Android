@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/lyname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Playing - 亲密爱人" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyalbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/ivalbum"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/album" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lylyc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lyalbum"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvlyc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="今夜还吹着风\n想起你好温柔\n有你的日子分外的轻松\n也不是无影踪\n只是想你太浓\n怎么会无时无刻把你梦\n爱的路上有你" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyskbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lyimgbtn"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/skbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyimgbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnprev"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_skip_previous_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/btnplay"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_play_arrow_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/btnnext"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_skip_next_black_24dp" />
+
+    </LinearLayout>
+</RelativeLayout>
